@@ -1,12 +1,539 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico">
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+  <!-- font-family: 'Roboto Condensed', sans-serif; -->
+  <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;700&display=swap" rel="stylesheet">
+  <!-- font-family: 'Oxygen', sans-serif; -->
+  <link rel="stylesheet" type="text/css" href="sass/style.css" >
+  <!-- Twitter Card -->
+  <link rel="stylesheet" href="styles.css">
+  <link
+  rel="stylesheet"
+  href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+/>
+
+
+  <meta name="twitter:title"
+    content="Akash Singh -Portfolio">
+  
+  <meta name="twitter:image" content="assets/images/social-media-thumbnail.jpg">
+  <!-- Twitter Card End -->  
+  <!-- Linkedin & Facebook Card -->
+  <meta property='og:title'
+    content="Akash Singh -Portfolio" />
+  <meta property='og:image' content="assets/images/social-media-thumbnail.jpg" />
+  <meta property="og:type" content="website" /><!--  og:type is only for Facebook-->
+  <meta property='og:description'
+    content="This is a portfolio website template that is free to download and use. You can edit this template and create your portfolio website in half an hour." />
+  <meta property='og:url' content="assets/images/social-media-thumbnail.jpg" />
+  <!-- Linkedin Card End -->
+  <title>Akash Singh -Portfolio</title>
 </head>
+<style>
+  
+  .dark{
+    position: relative;
+  }
+  .profile_img{
+   width: 50%;
+  
+  }
+  .button_resume{
+    display: flex;
+    justify-content: space-between;
+  }
+  #profile_imgDiv{
+background-color: rgb(222, 240, 255);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #btn-Resume{
+    width: 150px;
+    height: 50px;
+border-radius:5px;
+color: white;
+border: hidden;
+font-size: larger;
+background: #923cb5;
+  }
+</style>
 <body>
-    hello
+  <nav class="site-header">
+    <div class="nav-logo">
+      <a href="index.html">
+        <img src="assets/images/logo.png" alt="logo" width="314" height="60">
+      </a>
+    </div>
+    <button class="hamburger"><img src="assets/images/menu.png" alt="menu toggle icon"></button>
+    <div class="nav-links">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skill">Skills</a></li>
+        <!-- <li><a href="#service">Services</a></li> -->
+        <li><a href="#portfolio1">Projects</a></li>
+        <!-- <li><a href="#testimonial">Testimonial</a></li> -->
+        <!-- <li><a href="#pricing">Pricing</a></li> -->
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav><!-- .site-header -->
+  <section class="banner">
+    <div class="banner--content">
+      <h2 class="name">Akash Singh</h2>
+      <h1 class="designation">Backend Developer</h1>
+      <!-- <p class="tagline">If you&apos;re writer or something else, change the title as per your profession.</p> -->
+    </div>    
+  </section><!-- .banner -->
+  <section class="promo" >
+    <div class="content button_resume">
+      <h2>Let's  <span class="bold">Explore</span> it<span class="orange">.</span></h2>
+      <!-- <p>Great ideas, beautifully executed & commercially sound.</p> -->
+
+   <a href="https://drive.google.com/file/d/1YBAB_Te79q8yUO28AGr4f3hZQ2F1CBLy/view?usp=sharing" target="_blank"><button id="btn-Resume">
+        RESUME
+      </button></a>
+    </div>
+  </section>
+  <section id="about">
+    <div class="content ">
+      <h2>About Me</h2>
+      <div class="about-container">
+        <div class="about-container-left">
+          <p>Aspiring java backend developer focusing on building great products and learning in the process. Collaborative and fun to work with and looking to work for a more significant cause.</p>
+          <h3>Why you should hire me :</h3>
+          <ul>
+            <li>Problem Solver</li>
+            <li>Always ready to learn </li>
+            <li>A Believer</li>
+          </ul>
+          <!-- <p>Fugiat ratione laboriosam nostrum atque. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <h4>Atque lccusantium molestias amet</h4>
+          <p>Auam illo porro cupiditate repellendus explicabo ducimus esse. Dupiditate repellendus explicabo sunt natus voluptate fugit ducimus esse</p> -->
+        </div>
+        <div class="about-container-right">
+<div id="profile_imgDiv">
+  <img class="profile_img" src="assets/images/ex.jpeg" alt="Akash Singh, headshot">
+
+</div>        </div>
+      </div>
+    </div>
+  </section><!-- #about -->
+  <section id="skill">
+    <div class="content skill--content">
+      <div class="left">
+        <h2>My skills &amp; expertise</h2>
+        <p>Skilled in the tech stacks mentioned here.</p>
+      </div>
+      <div class="right">
+        <div class="item">
+          <img src="assets/images/html.png" alt="HTML">
+          <h3>HTML</h3>
+          <!-- <p>laboriosam temporibus harum culpa recusandae nemo tempora ut vitae earum quo.</p> -->
+          <img src="assets/images/css.png" alt="CSS">
+          <h3>CSS</h3>
+          <img src="assets/images/js.png" alt="JavaScript">
+          <h3>JavaScript</h3>
+        </div>
+        
+        <div class="item">
+          <img src="assets/images/java.png" alt="Java">
+          <h3>Java</h3>
+          <!-- <p>Sunt doloribus perferendis officia soluta enim optio distinctio exercitationem.</p> -->
+          <img src="assets/images/spring.png" alt="SpringBoot">
+          <h3>SpringBoot</h3>
+          <img src="assets/images/hibernate.png" alt="Hibernate">
+          <h3>Hibernate</h3>
+        </div>
+        <div class="item">
+          <img src="assets/images/sql.png" alt="MySql">
+          <h3>MySql</h3>
+          <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit qui debitis.</p> -->
+          <img src="assets/images/github.png" alt="Github">
+          <h3>Github</h3>
+          <img src="assets/images/aws.png" alt="AWS">
+          <h3>AWS</h3>
+        </div>
+        
+      </div>
+    </div>
+  </section><!-- #skill -->
+  
+  <!-- <section id="service">
+    <h2>Services I offer</h2>
+    <div class="content service--content">
+      <div class="item">
+        <h3>Logo design</h3>
+        <img src="assets/images/logo-design.png" alt="Logo design">
+        <p>Maiores dicta suscipit voluptate dignissimos fugiat!</p>
+        <a href="#contact">Hire Me</a>
+      </div> -->
+      <!-- .item -->
+      <!-- <div class="item">
+        <h3>Packaging design</h3>
+        <img src="assets/images/packaging-design.png" alt="Packaging design">
+        <p>Consectetur adipisicing elit. Dicta necessitatibus officia vitae.</p>
+        <a href="#contact">Hire Me</a>
+      </div> -->
+      <!-- .item -->
+      <!-- <div class="item">
+        <h3>3D image manipulation</h3>
+        <img src="assets/images/3d-image-design.png" alt="3D image manipulation">
+        <p>Possimus repellendus voluptas vel assumenda distinctio tatibus.</p>
+        <a href="#contact">Hire Me</a>
+      </div> -->
+      <!-- .item -->
+    <!-- </div>
+  </section> -->
+  <!-- #service -->
+  
+  
+  
+
+  <section id="portfolio " class="dark team" >
+  <div class="container" id="portfolio1">
+      
+      <div class="row">
+        <div class="col-md-8 col-sm-12">
+          <div class="section_title">
+            <h2>My <span>Projects</span></h2>
+            </div>
+        </div>
+      </div>
+
+
+
+      <div class="row team_container">
+
+        <div class="col-md-6 col-sm-12 team_item">
+
+<div class="team_image">
+
+  <div class="team_social trans_200" >
+  
+  
+  </div>
+
+<img src="assets/images/geekbuying.png" 
+style="	display: flex; height: 300px"
+alt="">
+
+<div class="team_image_rect"><div class="team_image_rect_inner"></div></div>
+
+</div>
+
+<div class="team_content">
+<div id="live_img1">
+  
+<div><div class="team_name trans_200"><a href="javascript:void(0)">GEEKBUYING CLONE</a></div>
+
+<div class="team_role trans_200"><span></span>designer</div></div>
+<!-- <div id="button_Liv"><button id="live">Live</button> <button id="live">GitHub</button></div> -->
+<div live_img>
+  <a href="https://nimble-melba-09757f.netlify.app/" target="_blank"> <svg style="margin-right:40px ;" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-link" viewBox="0 0 16 16">
+    <path d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z"/>
+    <path d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z"/>
+  </svg></a>
+  <a href="https://github.com/akashsinghdto55/geekbuyingsproject" target="_blank">
+  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-github" viewBox="0 0 16 16">
+    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+  </svg></a>
+
+</div>
+</div>
+<p class="trans_200">Geek Buyings is an e-commerce website listing
+  home products, fitness equipment, RC Toys,
+  and much more!
+  <h4>Features -</h4>
+<li>Login and Signup authentication.</li> 
+<li>Hover Effects and Animation.</li>
+<li>Users can sort and filter products.</li>
+<li> Cart and Payment Gateway.</li>
+<h4>Tech Stack:</h4>  HTML | CSS | JavaScript</p>
+
+</div>
+        </div>
+
+
+        <div class="col-md-6 col-sm-12 team_item" style="height: 100%">
+
+<div class="team_image"  id="heigg" style="height: 100%;" >
+
+<div class="team_social trans_200" style="height: 100%;" >
+  
+
+</div>
+
+<img src="assets/images/rodan.png"  style="	display: flex; height: 300px" class="image" alt="">
+
+<div class="team_image_rect"><div class="team_image_rect_inner"></div></div>
+
+</div>
+
+<div class="team_content">
+<div id="live_img1">
+<div>
+  <div class="team_name trans_200"><a href="javascript:void(0)">RODAN-FIELDS CLONE</a></div>
+
+<div class="team_role trans_200"><span></span>designer</div>
+</div>
+<div>
+  <a href="https://chic-choux-6f7ecf.netlify.app/" target="_blank"> <svg style="margin-right:40px ;" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-link" viewBox="0 0 16 16">
+    <path d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z"/>
+    <path d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z"/>
+  </svg></a>
+  
+  <a href="https://github.com/akashsinghdto55/Rodan-Fields" target="_blank">
+  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-github" viewBox="0 0 16 16">
+    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+  </svg></a></div></div>
+  <p class="trans_200">Rodan+Fields is an e-commerce website where
+    you can buy skin and healthcare products.
+    <h4>Features -</h4>
+  <li>Login and Signup authentication.</li> 
+<li>Hover Effects and Animation.</li>
+<li>Users can sort and filter products.</li>
+<li> Cart and Payment Gateway.</li>
+
+<h4>Tech Stack:</h4>  HTML | CSS | JavaScript
+</p>
+  
+</div>
+        </div>
+
+
+        <div id="kgb" class="col-md-6 col-sm-12 team_item">
+
+          <div class="team_image">
+          
+            <div class="team_social trans_200" >
+            
+            
+            </div>
+          
+          <img src="assets/images/social-media-thumbnail.jpg" 
+          style="	display: flex; height: 300px"
+          alt="">
+          
+          <div class="team_image_rect"><div class="team_image_rect_inner"></div></div>
+          
+          </div>
+          
+          <div class="team_content">
+          <div id="live_img1">
+            
+          <div><div class="team_name trans_200"><a href="javascript:void(0)">RESTAURANT CLONE</a></div>
+          
+          <div class="team_role trans_200"><span></span>designer</div></div>
+          <!-- <div id="button_Liv"><button id="live">Live</button> <button id="live">GitHub</button></div> -->
+          <div live_img>
+            <a href="https://sparkling-babka-4a4b80.netlify.app/" target="_blank"> <svg style="margin-right:40px ;" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-link" viewBox="0 0 16 16">
+              <path d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z"/>
+              <path d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z"/>
+            </svg></a>
+            <a href="https://github.com/akashsinghdto55/RESTAURANT-CLONE" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-github" viewBox="0 0 16 16">
+              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+            </svg></a>
+          
+          </div>
+          </div>
+          <p class="trans_200">RESTAURANT CLONE is an e-commerce website listing
+            food products, band much more!
+            <h4>Features -</h4>
+          <li>Login and Signup authentication.</li> 
+          <li>Add balance to your wallet.</li>
+          <li>Users can buy the ticket products.</li>
+          <li> Cart and Payment Gateway.</li>
+          <h4>Tech Stack:</h4>  HTML | CSS | JavaScript</p>
+          
+          </div>
+                  </div>
+
+
+
+
+      </div>
+
+  </div>
+<!-- </div> -->
+
+</section>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!-- portfolio -->
+  <!-- <section id="testimonial">
+    <h2>Testimonial -What clients are saying about me</h2>
+    <div class="content testimonial--content">
+      <div class="item">
+        <figure>
+          <blockquote cite="https://www.huxley.net/bnw/four.html">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque cumque quibusdam libero! Aperiam qui unde dolores iste eos, odit laboriosam optio sunt commodi aliquid pariatur nobis dolore! Excepturi, harum possimus.</p>
+          </blockquote>
+          <figcaption>—John Doe, <cite>CEO, Lorem Digital</cite></figcaption>
+        </figure>
+      </div> -->
+      <!-- item -->
+      <!-- <div class="item">
+        <figure>
+          <blockquote cite="https://www.huxley.net/bnw/four.html">
+              <p>Sit amet consectetur adipisicing elit. Neque cumque quibusdam libero! Aperiam qui unde dolores iste eos, odit laboriosam optio sunt commodi aliquid pariatur nobis dolore! Excepturi, harum possimus.</p>
+          </blockquote>
+          <figcaption>—John Doe, <cite>CEO, Lorem Digital</cite></figcaption>
+        </figure>
+      </div> -->
+      <!-- item -->
+      <!-- <div class="item">
+        <figure>
+          <blockquote cite="https://www.huxley.net/bnw/four.html">
+              <p>Consectetur adipisicing elit. Neque cumque quibusdam libero! Aperiam qui unde dolores iste eos, odit laboriosam optio sunt commodi aliquid pariatur nobis dolore! Excepturi, harum possimus.</p>
+          </blockquote>
+          <figcaption>—John Doe, <cite>CEO, Lorem Digital</cite></figcaption>
+        </figure>
+      </div> -->
+      <!-- item -->
+      <!-- <div class="item">
+        <figure>
+          <blockquote cite="https://www.huxley.net/bnw/four.html">
+              <p>Adipisicing elit. Neque cumque quibusdam libero! Aperiam qui unde dolores iste eos, odit laboriosam optio sunt commodi aliquid pariatur nobis dolore! Excepturi, harum possimus.</p>
+          </blockquote>
+          <figcaption>—John Doe, <cite>CEO, Lorem Digital</cite></figcaption>
+        </figure>
+      </div> -->
+      <!-- item -->
+    <!-- </div> -->
+    <!-- .testimonial--content -->
+  <!-- </section> -->
+  <!-- testimonial -->
+  <!-- <section id="pricing">
+    <h2 class="center">Pricing</h2>
+    <p class="center">I charge $30/hour (USD). But if you need any of the following tasks done, see the fixed price below.</p>
+    <div class="pricing--content">
+      <div class="item">
+        <h3>Logo design</h3>
+        <p class="price">$235</p>
+        <img src="assets/images/logo-design.png" alt="logo design price">
+        <p class="description">1 Professional Logo Designs in transparent format (png).</p>
+        <a href="#contact">Hire me</a>
+      </div> -->
+      <!-- item -->
+      <!-- <div class="item">
+        <h3>Packaging design</h3>
+        <p class="price">$450</p>
+        <img src="assets/images/packaging-design.png" alt="packaging design price">
+        <p class="description">Print ready design label or packaging for one product.</p>
+        <a href="#contact">Hire me</a>
+      </div> -->
+      <!-- item -->
+      <!-- <div class="item">
+        <h3>Illustrate album cover</h3>
+        <p class="price">$370</p>
+        <img src="assets/images/3d-image-design.png" alt="3d image design price">
+        <p class="description">Hi-res front cover image for streaming platforms.</p>
+        <a href="#contact">Hire me</a>
+      </div> -->
+      <!-- item -->
+    <!-- </div> -->
+    <!-- pricing--content -->
+  <!-- </section> -->
+  <!-- #pricing-->
+  <div id="akash">
+    <h3 id="xyz"><b>Github Statistics</b></h3>
+    <div class="calendar"  >
+      <!-- Loading stuff -->
+      Loading the data just for you.
+  </div>
+
+  <p id="saurav">&nbsp;<img  src="https://github-readme-stats.vercel.app/api?username=akashsinghdto55&show_icons=true&locale=en" alt="akashsinghdto55" /></p>
+
+  </div>
+  
+
+  <section id="contact">
+    <div class="content">
+      <h2 class="center">Contact Me</h2>
+      <p class="center contact-detail">Let's get in touch.</p>
+      <address>
+        <h3>Resume : <a href="https://drive.google.com/file/d/1YBAB_Te79q8yUO28AGr4f3hZQ2F1CBLy/view?usp=sharing" target="_blank">Akash Singh</a></h3>
+        <p>Email Me: <a href="mailto:akashsinghdto55@gmail.com">akashsinghdto55@gmail.com</a></p>
+        <p></p>Call me: <a href="tel:+919931979094">+919931979094</a></p>
+        <p>Address: Medininagar, Jharkhand<br>
+          India.</p>
+      </address>
+     
+    </div>
+  </section>
+  <div class="social-share">
+    <a href="https://wa.me/919931979094.com" target="_blank"><img src="assets/images/whatred.png" alt="connect on whatsApp"></a>
+    <a href="https://twitter.com/akashsinghdto55" target="_blank"><img src="assets/svg/twitter.svg" alt="connect on twitter"></a>
+    <a href="https://github.com/akashsinghdto55" target="_blank"><img src="assets/images/gitred.png" alt="connect on github"></a>
+    <a href="https://www.linkedin.com/in/akash-singh-a11458213/" target="_blank"><img src="assets/svg/linkedin.svg" alt="connect on Linked in"></a>
+  </div>
+  <footer class="site-footer">
+    <div class="content site-footer--content">
+      <div class="footer-left">
+        <!-- <img src="assets/images/logo.png" alt="logo"> -->
+        <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat necessitatibus a pariatur, quibusdam dolorem impedit assumenda laborum modi nam, rem odit, doloremque commodi in consectetur vitae nisi. Nostrum, voluptatum quibusdam. Rpsum dolor sit amet consectetur adipisicing elit. Repellat necessitatibus a pariatur, quibusdam dolorem impedit assumenda laborum modi nam, rem odit, doloremque commodi in consectetur vitae nisi. Nostrum, voluptatum quibusdam</p> -->
+      </div>
+      <div class="footer-right">
+        <!-- <address>
+          <p>Email Me: <a href="mailto:akashsinghdto55@gmail.com">akashsinghdto55@gmail.com</a></p>
+          <p></p>Call me: <a href="tel:+919931979094">+919931979094</a></p>
+          <p>Address: Medininagar, Jharkhand<br>
+            India.</p>
+
+        </address> -->
+        <!-- <img src="assets/images/whatred.png" alt="connect on whatsApp"> -->
+      </div>
+    </div>
+    <div class="copyright-notice">
+      <p>&copy; <!--<time datetime="2022">2022,</time>--> Credit and Special thanks to <a href="https://github.com/shihabiiuc" target="_blank" style="color:grey;">Shiha Biiuc</a> </p>
+     
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+  <script
+  src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"
+></script>
+
+
+<script>
+  //GitHubCalendar(".calendar", "your-username");
+  // or enable responsive functionality
+  GitHubCalendar(".calendar", "akashsinghdto55", { responsive: true });
+</script>
+
 </body>
 </html>
